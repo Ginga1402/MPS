@@ -56,6 +56,9 @@ MCP helps you build agents and complex workflows on top of LLMs. LLMs frequently
 
 ## 🔁 How It Works (Flow Example)
 
+<img src="https://github.com/user-attachments/assets/fffe5e30-be96-4f33-bf01-640d107c1d6d" width="400" />
+
+
 1. User sends query via an MCP host (e.g., chat app).
 2. MCP Client identifies the need for an external tool.
 3. MCP Server advertises available tools.
@@ -75,8 +78,58 @@ MCP helps you build agents and complex workflows on top of LLMs. LLMs frequently
 - 💡 **Fosters Innovation for AI App Developers**
 
 
+---
+
+## 🧩  Files Overview
+
+| File   | Description|
+|---------------|-------------|
+| **client.py** | A basic MCP client interacting only with a single mathserver. |
+| **mathserver.py** | An MCP server that exposes simple math operations (e.g., addition, multiplication). |
+| **weatherserver.py** | An MCP server simulating weather data responses. |
+| **multiclient.py** |A multi-client setup where the MCP client can connect to both the math and weather servers. |
+
+---
+
+
+## 🔄 How It Works
+
+1. The client.py script simulates an AI assistant (or LLM) interacting with the Math MCP Server only.
+
+2. The multiclient.py script demonstrates a more advanced use-case where the MCP client discovers and uses tools from multiple servers (Math + Weather).
+
+3. mathserver.py and weatherserver.py expose capabilities that can be consumed by MCP clients.
+
+
+
+## 🚀 Running the Demo
+
+1. Start the Servers:
+
+   ```bash
+   python mathserver.py
+   python weatherserver.py
+   
+   ```
+
+2. Run Single-Client Demo:
+
+    ```bash
+    python client.py
+   
+   ```  
+
+3. Run Multi-Client Demo:
+
+     ```bash
+    python multiclient.py
+
+   ```   
+
+---
 
 ## 🚀 Get Involved
+Contributions are welcome! If you have suggestions or would like to enhance this project, please fork the repository and submit a pull request.
 
 Interested in contributing to MCP? Stay tuned for:
 
@@ -88,4 +141,6 @@ Feel free to ⭐️ the repo and join the discussion!
 
 ---
 
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
