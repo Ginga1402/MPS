@@ -80,6 +80,16 @@ MCP helps you build agents and complex workflows on top of LLMs. LLMs frequently
 
 ---
 
+## 🛠️ Tech Stack Used
+
+- **[Python](https://www.python.org/)** - Python forms the backbone of CodeBuddy, providing robust support for integration with various libraries and frameworks.
+- **[Langchain](https://github.com/hwchase17/langchain)** - LangChain is a framework designed to simplify the creation of applications using large language models.
+- **[Ollama](https://ollama.com/)** - It provides a simple API for creating, running, and managing models, as well as a library of pre-built models that can be easily used in a variety of applications.
+- **[langchain-mcp-adapters](https://github.com/langchain-ai/langchain-mcp-adapters)** - This library provides a lightweight wrapper that makes Anthropic Model Context Protocol (MCP) tools compatible with LangChain and LangGraph. 
+
+---
+
+
 ## 🧩  Files Overview
 
 | File   | Description|
